@@ -1,0 +1,10 @@
+propel:
+  _attributes:   { noXsd: false, defaultIdMethod: none, package: lib.model }
+
+  ask_writein:
+    _attributes: { phpName: Writein, idMethod: native }
+    id:          { type: integer, required: true, primaryKey: true, autoIncrement: true }
+    title:       { type: longvarchar }
+    body:        { type: longvarchar }
+    created_at:  ~
+    updated_at:  ~
